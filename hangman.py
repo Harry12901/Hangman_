@@ -15,7 +15,7 @@ turns = int(len(word)*1.5)
 unguessed=0
 while True:
     print("You are left with {} turns".format(turns))
-    inp = input("Make a guess: ")
+    inp = input("\nMake a guess: ")
     turns-=1
     unguessed=0
     if inp in word:
@@ -27,8 +27,8 @@ while True:
             unguessed+=1
             print('*',end="")
     if unguessed==0:
-        print("WOn")
+        print("\nWOn")
         break
     if turns ==0:
-        print("Ran out of turns")
+        print("\nRan out of turns")
         break
